@@ -2,7 +2,16 @@
 %Ax=b con base en una condición inicial x0,mediante el método Gauss Seidel (relajado), depende del valor de w 
 %entre (0,2)
 
-function [] = SOR(x0,A,b,Tol,niter,w,norma)
+function [x0,A,b,Tol,niter,w,norma] = SOR()
+
+x0 = input('Ingrese el valor de la aproximación inicial:');
+A = input('Ingrese la matriz A:');
+b = input('Ingrese el valor del vector b:');
+Tol = input('Ingrese el valor de la tolerancia:');
+niter = input('Ingrese el número de iteraciones:');
+w = input('Ingrese el valor del factor de relajación:');
+norma = input('Ingrese la norma:');
+
     c=0;
     error=Tol+1;
     D=diag(diag(A));
