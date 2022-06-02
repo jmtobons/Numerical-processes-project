@@ -1,4 +1,7 @@
-function []=vandermonde(X,Y)
+function [X,Y]=vandermonde()
+
+X = input('Ingrese el valor de las x:');
+Y = input('Ingrese el valor de las y:');
 
 %Inicializaci�n
 n=length(X);
