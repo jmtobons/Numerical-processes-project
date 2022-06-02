@@ -1,4 +1,7 @@
-function []=elimina_gauss(A,b) 
+function [A,b]=elimina_gauss() 
+
+A = input('Ingrese la matriz A:');
+b = input('Ingrese el valor del vector b:');
 
 n=size(A,1);
 M=[A b];
