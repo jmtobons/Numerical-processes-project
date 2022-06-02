@@ -1,4 +1,7 @@
-function []=gaussparcial(A,b) 
+function [A,b]=gaussparcial() 
+
+A = input('Ingrese la matriz A:');
+b = input('Ingrese el valor del vector b:');
 
 n=size(A,1);
 M=[A b];
