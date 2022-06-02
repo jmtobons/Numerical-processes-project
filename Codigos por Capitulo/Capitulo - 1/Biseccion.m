@@ -1,7 +1,13 @@
 %Bisección: se ingresa el valor inicial y final del intervalo (xi, xs), la tolerancia del error (Tol) y el màximo nùmero de iteraciones (niter) 
 
-function [] = Biseccion(f,xi,xs,Tol,niter)
+function [f,xi,xs,Tol,niter] = Biseccion
     % f = @(x) x/2*(1+3/5.76*sec(2/4.8*sqrt(x/400)))-300
+    f = input('Ingrese la función de entrada:');
+    xi=input('Ingrese el valor del intervalo inicial:');
+    xs=input('Ingrese el valor del intervalo final:');
+    Tol=input('Ingrese el valor de la tolerancia:');
+    niter=input('Ingrese el número de iteraciones:');
+
     fi=eval(subs(f,xi));
     fs=eval(subs(f,xs));
     if fi==0
