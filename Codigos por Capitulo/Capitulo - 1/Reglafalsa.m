@@ -1,6 +1,11 @@
-function []=Reglafalsa(f,a,b,tol,Nmax)
+function [f,a,b,tol,Nmax]=Reglafalsa()
 
 % f = @(x) x/2*(1+3/5.76*sec(2/4.8*sqrt(x/400)))-300
+f = input('Ingrese la función de entrada:');
+a=input('Ingrese el valor del intervalo inicial:');
+b=input('Ingrese el valor del intervalo final:');
+tol=input('Ingrese el valor de la tolerancia:');
+Nmax=input('Ingrese el número de iteraciones:');
 
 %Inicialización
 fa=f(a);
