@@ -1,4 +1,11 @@
-function [x,iter,err]=gausseidel(A,b,x0,tol,Nmax,norma)
+function [A,b,x0,tol,Nmax,norma,x,iter,err]=gausseidel()
+
+A = input('Ingrese la matriz A:');
+b = input('Ingrese el valor del vector b:');
+x0 = input('Ingrese el valor de la aproximación inicial:');
+tol = input('Ingrese el valor de la tolerancia:');
+Nmax = input('Ingrese el número de iteraciones:');
+norma = input('Ingrese la norma:');
 
 D=diag(diag(A));
 L=-tril(A)+D;
