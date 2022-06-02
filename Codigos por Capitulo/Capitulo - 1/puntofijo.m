@@ -1,6 +1,12 @@
-function []=puntofijo(f,g,x0,tol,Nmax)
+function [f,g,x0,tol,Nmax]=puntofijo()
 % f = @(x) x/2*(1+3/5.76*sec(2/4.8*sqrt(x/400)))-300
 % g = @(x) 2*(300/(1+3/5.76*sec(2/4.8*sqrt(x/400))))
+
+f = input('Ingrese la función de entrada:');
+g =input('Ingrese la función derivada:');
+x0=input('Ingrese el valor de la aproximación inicial:');
+tol=input('Ingrese el valor de la tolerancia:');
+Nmax=input('Ingrese el número de iteraciones:');
 
 xant=x0;
 E=1000; 
