@@ -1,4 +1,8 @@
-function []=splinelineal(X,Y)
+function [X,Y]=splinelineal()
+
+X = input('Ingrese el valor de las x:');
+Y = input('Ingrese el valor de las y:');
+
     close all
     n=length(X);
     m=2*(n-1);
