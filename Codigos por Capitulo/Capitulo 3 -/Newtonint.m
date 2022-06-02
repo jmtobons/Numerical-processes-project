@@ -1,7 +1,11 @@
 %Newtonint: Calcula los coeficienetes del polinomio de interpolación de
 % grado n-1 para el conjunto de n datos (x,y), mediante el método de Newton
 % con diferencias divididas.
-function [] = Newtonint(nodos,fnodos)
+function [nodos,fnodos] = Newtonint()
+
+nodos = input('Ingrese el valor de las x:');
+fnodos = input('Ingrese el valor de las y:');
+
     N=length(nodos)-1;
     M=zeros(N+1,N+2);
     M(:,1)=nodos;
