@@ -1,4 +1,8 @@
-function []=splinecubico(X,Y)
+function [X,Y]=splinecubico()
+
+X = input('Ingrese el valor de las x:');
+Y = input('Ingrese el valor de las y:');
+
     close all
     n=length(X);
     m=4*(n-1);
