@@ -1,5 +1,12 @@
-function []=raices_multiples_1(f,x0,tol,Nmax)
+function [f,x0,tol,Nmax]=raices_multiples_1()
 syms x
+% f = x/2*(1+3/5.76*sec(2/4.8*sqrt(x/400)))-300
+
+f = input('Ingrese la función de entrada:');
+x0=input('Ingrese el valor de la aproximación inicial:');
+tol=input('Ingrese el valor de la tolerancia:');
+Nmax=input('Ingrese el número de iteraciones:');
+
 df = diff(f);
 d2f = diff(df);
 xant=x0;
