@@ -1,4 +1,12 @@
-function[] = secante(f,p0,p1,tol,N)                         
+function[f,p0,p1,tol,N] = secante()   
+% f = @(x) x/2*(1+3/5.76*sec(2/4.8*sqrt(x/400)))-300
+
+f = input('Ingrese la función de entrada:');
+p0=input('Ingrese el valor de la aproximación inicial:');
+p1=input('Ingrese el valor de la aproximación final:');
+tol=input('Ingrese el valor de la tolerancia:');
+N=input('Ingrese el número de iteraciones:');
+
 i = 0;   
 q0 = f(p0);    %evaluacion
 q1 = f(p1);
