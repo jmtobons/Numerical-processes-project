@@ -1,6 +1,14 @@
 %Newton: se ingresa el valor inicial (x0), la tolerancia del error (Tol) y el màximo nùmero de iteraciones (niter) 
-% f = @(x) x/2*(1+3/5.76*sec(2/4.8*sqrt(x/400)))-300
-function [] = newton(f,x0,Tol,niter)
+
+function [f,x0,Tol,niter] = newton()
+% f = x/2*(1+3/5.76*sec(2/4.8*sqrt(x/400)))-300
+syms x
+
+f = input('Ingrese la función de entrada:');
+x0=input('Ingrese el valor de la aproximación inicial:');
+Tol=input('Ingrese el valor de la tolerancia:');
+niter=input('Ingrese el número de iteraciones:');
+
         df=diff(f);
         c=0;
         fm(c+1) = eval(subs(f,x0));
